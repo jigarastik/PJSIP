@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59CEAE70-DD51-4287-B994-256B41D37835</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TryPJSIP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E6384A81-CBEF-4F32-815C-0514DA15A6F4</key>
+		<string>https://github.com/jigarastik/PJSIP.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TryPJSIP.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E6384A81-CBEF-4F32-815C-0514DA15A6F4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jigarastik/PJSIP.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E6384A81-CBEF-4F32-815C-0514DA15A6F4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E6384A81-CBEF-4F32-815C-0514DA15A6F4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TryPJSIP</string>
+		</dict>
+	</array>
+</dict>
+</plist>

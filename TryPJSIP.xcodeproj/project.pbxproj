@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B07844C1952B72C0007D7A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07844B1952B72C0007D7A9 /* Foundation.framework */; };
+		9B07844E1952B72C0007D7A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07844D1952B72C0007D7A9 /* CoreGraphics.framework */; };
+		9B0784501952B72C0007D7A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07844F1952B72C0007D7A9 /* UIKit.framework */; };
+		9B0784561952B72C0007D7A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B0784541952B72C0007D7A9 /* InfoPlist.strings */; };
+		9B0784581952B72C0007D7A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784571952B72C0007D7A9 /* main.m */; };
+		9B07845C1952B72C0007D7A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07845B1952B72C0007D7A9 /* AppDelegate.m */; };
+		9B07845E1952B72C0007D7A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B07845D1952B72C0007D7A9 /* Images.xcassets */; };
+		9B0784651952B72C0007D7A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784641952B72C0007D7A9 /* XCTest.framework */; };
+		9B0784661952B72C0007D7A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07844B1952B72C0007D7A9 /* Foundation.framework */; };
+		9B0784671952B72C0007D7A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07844F1952B72C0007D7A9 /* UIKit.framework */; };
+		9B07846F1952B72C0007D7A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B07846D1952B72C0007D7A9 /* InfoPlist.strings */; };
+		9B0784711952B72C0007D7A9 /* TryPJSIPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784701952B72C0007D7A9 /* TryPJSIPTests.m */; };
+		9B07847C1952B90B0007D7A9 /* libpj-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07847B1952B90B0007D7A9 /* libpj-arm-apple-darwin9.a */; };
+		9B07847E1952B9190007D7A9 /* libpjlib-util-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07847D1952B9190007D7A9 /* libpjlib-util-arm-apple-darwin9.a */; };
+		9B0784841952B9300007D7A9 /* libpjmedia-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07847F1952B9300007D7A9 /* libpjmedia-arm-apple-darwin9.a */; };
+		9B0784851952B9300007D7A9 /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784801952B9300007D7A9 /* libpjmedia-audiodev-arm-apple-darwin9.a */; };
+		9B0784861952B9300007D7A9 /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784811952B9300007D7A9 /* libpjmedia-codec-arm-apple-darwin9.a */; };
+		9B0784871952B9300007D7A9 /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784821952B9300007D7A9 /* libpjmedia-videodev-arm-apple-darwin9.a */; };
+		9B0784881952B9300007D7A9 /* libpjsdp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784831952B9300007D7A9 /* libpjsdp-arm-apple-darwin9.a */; };
+		9B07848A1952B93C0007D7A9 /* libpjnath-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784891952B93C0007D7A9 /* libpjnath-arm-apple-darwin9.a */; };
+		9B07848F1952B9480007D7A9 /* libpjsip-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07848B1952B9480007D7A9 /* libpjsip-arm-apple-darwin9.a */; };
+		9B0784901952B9480007D7A9 /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07848C1952B9480007D7A9 /* libpjsip-simple-arm-apple-darwin9.a */; };
+		9B0784911952B9480007D7A9 /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07848D1952B9480007D7A9 /* libpjsip-ua-arm-apple-darwin9.a */; };
+		9B0784921952B9480007D7A9 /* libpjsua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07848E1952B9480007D7A9 /* libpjsua-arm-apple-darwin9.a */; };
+		9B0784991952B9530007D7A9 /* libg7221codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784931952B9530007D7A9 /* libg7221codec-arm-apple-darwin9.a */; };
+		9B07849A1952B9530007D7A9 /* libgsmcodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784941952B9530007D7A9 /* libgsmcodec-arm-apple-darwin9.a */; };
+		9B07849B1952B9530007D7A9 /* libilbccodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784951952B9530007D7A9 /* libilbccodec-arm-apple-darwin9.a */; };
+		9B07849C1952B9530007D7A9 /* libresample-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784961952B9530007D7A9 /* libresample-arm-apple-darwin9.a */; };
+		9B07849D1952B9530007D7A9 /* libspeex-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784971952B9530007D7A9 /* libspeex-arm-apple-darwin9.a */; };
+		9B07849E1952B9530007D7A9 /* libsrtp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784981952B9530007D7A9 /* libsrtp-arm-apple-darwin9.a */; };
+		9B0784A91952BB910007D7A9 /* pjsua_app.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784A11952BB910007D7A9 /* pjsua_app.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B0784AA1952BB910007D7A9 /* pjsua_app_cli.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784A31952BB910007D7A9 /* pjsua_app_cli.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B0784AB1952BB910007D7A9 /* pjsua_app_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784A41952BB910007D7A9 /* pjsua_app_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B0784AC1952BB910007D7A9 /* pjsua_app_config.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784A61952BB910007D7A9 /* pjsua_app_config.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B0784AD1952BB910007D7A9 /* pjsua_app_legacy.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784A81952BB910007D7A9 /* pjsua_app_legacy.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B0784AF1952C3050007D7A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784AE1952C3050007D7A9 /* AVFoundation.framework */; };
+		9B0784B11952C30B0007D7A9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784B01952C30B0007D7A9 /* AudioToolbox.framework */; };
+		9B0784B31952C3150007D7A9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0784B21952C3150007D7A9 /* CFNetwork.framework */; };
+		9B0784C21952F0DD0007D7A9 /* NSNotificationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784C11952F0DD0007D7A9 /* NSNotificationAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B0784C61952F21A0007D7A9 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0784C41952F21A0007D7A9 /* TestVC.m */; };
+		9B0784C71952F21A0007D7A9 /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0784C51952F21A0007D7A9 /* TestVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B0784681952B72C0007D7A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B0784401952B72C0007D7A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B0784471952B72C0007D7A9;
+			remoteInfo = TryPJSIP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B0784481952B72C0007D7A9 /* TryPJSIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryPJSIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B07844B1952B72C0007D7A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9B07844D1952B72C0007D7A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9B07844F1952B72C0007D7A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9B0784531952B72C0007D7A9 /* TryPJSIP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TryPJSIP-Info.plist"; sourceTree = "<group>"; };
+		9B0784551952B72C0007D7A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B0784571952B72C0007D7A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B0784591952B72C0007D7A9 /* TryPJSIP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TryPJSIP-Prefix.pch"; sourceTree = "<group>"; };
+		9B07845A1952B72C0007D7A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B07845B1952B72C0007D7A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B07845D1952B72C0007D7A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9B0784631952B72C0007D7A9 /* TryPJSIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryPJSIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0784641952B72C0007D7A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9B07846C1952B72C0007D7A9 /* TryPJSIPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TryPJSIPTests-Info.plist"; sourceTree = "<group>"; };
+		9B07846E1952B72C0007D7A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B0784701952B72C0007D7A9 /* TryPJSIPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TryPJSIPTests.m; sourceTree = "<group>"; };
+		9B07847B1952B90B0007D7A9 /* libpj-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpj-arm-apple-darwin9.a"; path = "Libs/pjlib/lib/libpj-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B07847D1952B9190007D7A9 /* libpjlib-util-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjlib-util-arm-apple-darwin9.a"; path = "Libs/pjlib-util/lib/libpjlib-util-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B07847F1952B9300007D7A9 /* libpjmedia-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-arm-apple-darwin9.a"; path = "Libs/pjmedia/lib/libpjmedia-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784801952B9300007D7A9 /* libpjmedia-audiodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-audiodev-arm-apple-darwin9.a"; path = "Libs/pjmedia/lib/libpjmedia-audiodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784811952B9300007D7A9 /* libpjmedia-codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-codec-arm-apple-darwin9.a"; path = "Libs/pjmedia/lib/libpjmedia-codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784821952B9300007D7A9 /* libpjmedia-videodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-videodev-arm-apple-darwin9.a"; path = "Libs/pjmedia/lib/libpjmedia-videodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784831952B9300007D7A9 /* libpjsdp-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsdp-arm-apple-darwin9.a"; path = "Libs/pjmedia/lib/libpjsdp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784891952B93C0007D7A9 /* libpjnath-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjnath-arm-apple-darwin9.a"; path = "Libs/pjnath/lib/libpjnath-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B07848B1952B9480007D7A9 /* libpjsip-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-arm-apple-darwin9.a"; path = "Libs/pjsip/lib/libpjsip-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B07848C1952B9480007D7A9 /* libpjsip-simple-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-simple-arm-apple-darwin9.a"; path = "Libs/pjsip/lib/libpjsip-simple-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B07848D1952B9480007D7A9 /* libpjsip-ua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsip-ua-arm-apple-darwin9.a"; path = "Libs/pjsip/lib/libpjsip-ua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B07848E1952B9480007D7A9 /* libpjsua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjsua-arm-apple-darwin9.a"; path = "Libs/pjsip/lib/libpjsua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784931952B9530007D7A9 /* libg7221codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libg7221codec-arm-apple-darwin9.a"; path = "Libs/third_party/lib/libg7221codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784941952B9530007D7A9 /* libgsmcodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgsmcodec-arm-apple-darwin9.a"; path = "Libs/third_party/lib/libgsmcodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784951952B9530007D7A9 /* libilbccodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libilbccodec-arm-apple-darwin9.a"; path = "Libs/third_party/lib/libilbccodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784961952B9530007D7A9 /* libresample-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libresample-arm-apple-darwin9.a"; path = "Libs/third_party/lib/libresample-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784971952B9530007D7A9 /* libspeex-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libspeex-arm-apple-darwin9.a"; path = "Libs/third_party/lib/libspeex-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784981952B9530007D7A9 /* libsrtp-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsrtp-arm-apple-darwin9.a"; path = "Libs/third_party/lib/libsrtp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9B0784A11952BB910007D7A9 /* pjsua_app.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pjsua_app.c; sourceTree = "<group>"; };
+		9B0784A21952BB910007D7A9 /* pjsua_app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsua_app.h; sourceTree = "<group>"; };
+		9B0784A31952BB910007D7A9 /* pjsua_app_cli.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pjsua_app_cli.c; sourceTree = "<group>"; };
+		9B0784A41952BB910007D7A9 /* pjsua_app_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pjsua_app_common.c; sourceTree = "<group>"; };
+		9B0784A51952BB910007D7A9 /* pjsua_app_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsua_app_common.h; sourceTree = "<group>"; };
+		9B0784A61952BB910007D7A9 /* pjsua_app_config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pjsua_app_config.c; sourceTree = "<group>"; };
+		9B0784A71952BB910007D7A9 /* pjsua_app_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsua_app_config.h; sourceTree = "<group>"; };
+		9B0784A81952BB910007D7A9 /* pjsua_app_legacy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pjsua_app_legacy.c; sourceTree = "<group>"; };
+		9B0784AE1952C3050007D7A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9B0784B01952C30B0007D7A9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9B0784B21952C3150007D7A9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9B0784BF1952EE830007D7A9 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		9B0784C01952F0DD0007D7A9 /* NSNotificationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNotificationAdditions.h; sourceTree = "<group>"; };
+		9B0784C11952F0DD0007D7A9 /* NSNotificationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationAdditions.m; sourceTree = "<group>"; };
+		9B0784C31952F21A0007D7A9 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		9B0784C41952F21A0007D7A9 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		9B0784C51952F21A0007D7A9 /* TestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B0784451952B72C0007D7A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0784B31952C3150007D7A9 /* CFNetwork.framework in Frameworks */,
+				9B0784B11952C30B0007D7A9 /* AudioToolbox.framework in Frameworks */,
+				9B0784AF1952C3050007D7A9 /* AVFoundation.framework in Frameworks */,
+				9B07847E1952B9190007D7A9 /* libpjlib-util-arm-apple-darwin9.a in Frameworks */,
+				9B0784921952B9480007D7A9 /* libpjsua-arm-apple-darwin9.a in Frameworks */,
+				9B07847C1952B90B0007D7A9 /* libpj-arm-apple-darwin9.a in Frameworks */,
+				9B07848A1952B93C0007D7A9 /* libpjnath-arm-apple-darwin9.a in Frameworks */,
+				9B07844E1952B72C0007D7A9 /* CoreGraphics.framework in Frameworks */,
+				9B0784871952B9300007D7A9 /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */,
+				9B07849E1952B9530007D7A9 /* libsrtp-arm-apple-darwin9.a in Frameworks */,
+				9B0784501952B72C0007D7A9 /* UIKit.framework in Frameworks */,
+				9B07844C1952B72C0007D7A9 /* Foundation.framework in Frameworks */,
+				9B0784841952B9300007D7A9 /* libpjmedia-arm-apple-darwin9.a in Frameworks */,
+				9B0784901952B9480007D7A9 /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */,
+				9B07849B1952B9530007D7A9 /* libilbccodec-arm-apple-darwin9.a in Frameworks */,
+				9B0784861952B9300007D7A9 /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */,
+				9B0784881952B9300007D7A9 /* libpjsdp-arm-apple-darwin9.a in Frameworks */,
+				9B0784911952B9480007D7A9 /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */,
+				9B0784991952B9530007D7A9 /* libg7221codec-arm-apple-darwin9.a in Frameworks */,
+				9B0784851952B9300007D7A9 /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */,
+				9B07849A1952B9530007D7A9 /* libgsmcodec-arm-apple-darwin9.a in Frameworks */,
+				9B07849C1952B9530007D7A9 /* libresample-arm-apple-darwin9.a in Frameworks */,
+				9B07849D1952B9530007D7A9 /* libspeex-arm-apple-darwin9.a in Frameworks */,
+				9B07848F1952B9480007D7A9 /* libpjsip-arm-apple-darwin9.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B0784601952B72C0007D7A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0784651952B72C0007D7A9 /* XCTest.framework in Frameworks */,
+				9B0784671952B72C0007D7A9 /* UIKit.framework in Frameworks */,
+				9B0784661952B72C0007D7A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B07843F1952B72C0007D7A9 = {
+			isa = PBXGroup;
+			children = (
+				9B0784511952B72C0007D7A9 /* TryPJSIP */,
+				9B07846A1952B72C0007D7A9 /* TryPJSIPTests */,
+				9B07844A1952B72C0007D7A9 /* Frameworks */,
+				9B0784491952B72C0007D7A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B0784491952B72C0007D7A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B0784481952B72C0007D7A9 /* TryPJSIP.app */,
+				9B0784631952B72C0007D7A9 /* TryPJSIPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B07844A1952B72C0007D7A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B0784B21952C3150007D7A9 /* CFNetwork.framework */,
+				9B0784B01952C30B0007D7A9 /* AudioToolbox.framework */,
+				9B0784AE1952C3050007D7A9 /* AVFoundation.framework */,
+				9B07844B1952B72C0007D7A9 /* Foundation.framework */,
+				9B07844D1952B72C0007D7A9 /* CoreGraphics.framework */,
+				9B07844F1952B72C0007D7A9 /* UIKit.framework */,
+				9B0784641952B72C0007D7A9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B0784511952B72C0007D7A9 /* TryPJSIP */ = {
+			isa = PBXGroup;
+			children = (
+				9B0784B41952D53A0007D7A9 /* Siphon */,
+				9B0784A01952BB910007D7A9 /* Config */,
+				9B07847A1952B8C70007D7A9 /* Libraries */,
+				9B07845A1952B72C0007D7A9 /* AppDelegate.h */,
+				9B07845B1952B72C0007D7A9 /* AppDelegate.m */,
+				9B0784C31952F21A0007D7A9 /* TestVC.h */,
+				9B0784C41952F21A0007D7A9 /* TestVC.m */,
+				9B0784C51952F21A0007D7A9 /* TestVC.xib */,
+				9B07845D1952B72C0007D7A9 /* Images.xcassets */,
+				9B0784521952B72C0007D7A9 /* Supporting Files */,
+			);
+			path = TryPJSIP;
+			sourceTree = "<group>";
+		};
+		9B0784521952B72C0007D7A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B0784531952B72C0007D7A9 /* TryPJSIP-Info.plist */,
+				9B0784541952B72C0007D7A9 /* InfoPlist.strings */,
+				9B0784571952B72C0007D7A9 /* main.m */,
+				9B0784591952B72C0007D7A9 /* TryPJSIP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B07846A1952B72C0007D7A9 /* TryPJSIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B0784701952B72C0007D7A9 /* TryPJSIPTests.m */,
+				9B07846B1952B72C0007D7A9 /* Supporting Files */,
+			);
+			path = TryPJSIPTests;
+			sourceTree = "<group>";
+		};
+		9B07846B1952B72C0007D7A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B07846C1952B72C0007D7A9 /* TryPJSIPTests-Info.plist */,
+				9B07846D1952B72C0007D7A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B07847A1952B8C70007D7A9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9B07847B1952B90B0007D7A9 /* libpj-arm-apple-darwin9.a */,
+				9B07847D1952B9190007D7A9 /* libpjlib-util-arm-apple-darwin9.a */,
+				9B07847F1952B9300007D7A9 /* libpjmedia-arm-apple-darwin9.a */,
+				9B0784801952B9300007D7A9 /* libpjmedia-audiodev-arm-apple-darwin9.a */,
+				9B0784811952B9300007D7A9 /* libpjmedia-codec-arm-apple-darwin9.a */,
+				9B0784821952B9300007D7A9 /* libpjmedia-videodev-arm-apple-darwin9.a */,
+				9B0784831952B9300007D7A9 /* libpjsdp-arm-apple-darwin9.a */,
+				9B0784891952B93C0007D7A9 /* libpjnath-arm-apple-darwin9.a */,
+				9B07848B1952B9480007D7A9 /* libpjsip-arm-apple-darwin9.a */,
+				9B07848C1952B9480007D7A9 /* libpjsip-simple-arm-apple-darwin9.a */,
+				9B07848D1952B9480007D7A9 /* libpjsip-ua-arm-apple-darwin9.a */,
+				9B07848E1952B9480007D7A9 /* libpjsua-arm-apple-darwin9.a */,
+				9B0784931952B9530007D7A9 /* libg7221codec-arm-apple-darwin9.a */,
+				9B0784941952B9530007D7A9 /* libgsmcodec-arm-apple-darwin9.a */,
+				9B0784951952B9530007D7A9 /* libilbccodec-arm-apple-darwin9.a */,
+				9B0784961952B9530007D7A9 /* libresample-arm-apple-darwin9.a */,
+				9B0784971952B9530007D7A9 /* libspeex-arm-apple-darwin9.a */,
+				9B0784981952B9530007D7A9 /* libsrtp-arm-apple-darwin9.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		9B0784A01952BB910007D7A9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9B0784A11952BB910007D7A9 /* pjsua_app.c */,
+				9B0784A21952BB910007D7A9 /* pjsua_app.h */,
+				9B0784A31952BB910007D7A9 /* pjsua_app_cli.c */,
+				9B0784A41952BB910007D7A9 /* pjsua_app_common.c */,
+				9B0784A51952BB910007D7A9 /* pjsua_app_common.h */,
+				9B0784A61952BB910007D7A9 /* pjsua_app_config.c */,
+				9B0784A71952BB910007D7A9 /* pjsua_app_config.h */,
+				9B0784A81952BB910007D7A9 /* pjsua_app_legacy.c */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9B0784B41952D53A0007D7A9 /* Siphon */ = {
+			isa = PBXGroup;
+			children = (
+				9B0784C01952F0DD0007D7A9 /* NSNotificationAdditions.h */,
+				9B0784C11952F0DD0007D7A9 /* NSNotificationAdditions.m */,
+				9B0784BF1952EE830007D7A9 /* constants.h */,
+			);
+			path = Siphon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B0784471952B72C0007D7A9 /* TryPJSIP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0784741952B72C0007D7A9 /* Build configuration list for PBXNativeTarget "TryPJSIP" */;
+			buildPhases = (
+				9B0784441952B72C0007D7A9 /* Sources */,
+				9B0784451952B72C0007D7A9 /* Frameworks */,
+				9B0784461952B72C0007D7A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TryPJSIP;
+			productName = TryPJSIP;
+			productReference = 9B0784481952B72C0007D7A9 /* TryPJSIP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B0784621952B72C0007D7A9 /* TryPJSIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0784771952B72C0007D7A9 /* Build configuration list for PBXNativeTarget "TryPJSIPTests" */;
+			buildPhases = (
+				9B07845F1952B72C0007D7A9 /* Sources */,
+				9B0784601952B72C0007D7A9 /* Frameworks */,
+				9B0784611952B72C0007D7A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B0784691952B72C0007D7A9 /* PBXTargetDependency */,
+			);
+			name = TryPJSIPTests;
+			productName = TryPJSIPTests;
+			productReference = 9B0784631952B72C0007D7A9 /* TryPJSIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B0784401952B72C0007D7A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = eInfochips;
+				TargetAttributes = {
+					9B0784621952B72C0007D7A9 = {
+						TestTargetID = 9B0784471952B72C0007D7A9;
+					};
+				};
+			};
+			buildConfigurationList = 9B0784431952B72C0007D7A9 /* Build configuration list for PBXProject "TryPJSIP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9B07843F1952B72C0007D7A9;
+			productRefGroup = 9B0784491952B72C0007D7A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B0784471952B72C0007D7A9 /* TryPJSIP */,
+				9B0784621952B72C0007D7A9 /* TryPJSIPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B0784461952B72C0007D7A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0784561952B72C0007D7A9 /* InfoPlist.strings in Resources */,
+				9B07845E1952B72C0007D7A9 /* Images.xcassets in Resources */,
+				9B0784C71952F21A0007D7A9 /* TestVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B0784611952B72C0007D7A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B07846F1952B72C0007D7A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B0784441952B72C0007D7A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0784C61952F21A0007D7A9 /* TestVC.m in Sources */,
+				9B07845C1952B72C0007D7A9 /* AppDelegate.m in Sources */,
+				9B0784AC1952BB910007D7A9 /* pjsua_app_config.c in Sources */,
+				9B0784AD1952BB910007D7A9 /* pjsua_app_legacy.c in Sources */,
+				9B0784C21952F0DD0007D7A9 /* NSNotificationAdditions.m in Sources */,
+				9B0784AB1952BB910007D7A9 /* pjsua_app_common.c in Sources */,
+				9B0784A91952BB910007D7A9 /* pjsua_app.c in Sources */,
+				9B0784AA1952BB910007D7A9 /* pjsua_app_cli.c in Sources */,
+				9B0784581952B72C0007D7A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B07845F1952B72C0007D7A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0784711952B72C0007D7A9 /* TryPJSIPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B0784691952B72C0007D7A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B0784471952B72C0007D7A9 /* TryPJSIP */;
+			targetProxy = 9B0784681952B72C0007D7A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B0784541952B72C0007D7A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B0784551952B72C0007D7A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9B07846D1952B72C0007D7A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B07846E1952B72C0007D7A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B0784721952B72C0007D7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B0784731952B72C0007D7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B0784751952B72C0007D7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TryPJSIP/TryPJSIP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"PJ_AUTOCONF=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/TryPJSIP/Libs/pjsip/include",
+					"$(SRCROOT)/TryPJSIP/Libs/pjlib/include",
+					"$(SRCROOT)/TryPJSIP/Libs/pjlib-util/include",
+					"$(SRCROOT)/TryPJSIP/Libs/pjnath/include",
+					"$(SRCROOT)/TryPJSIP/Libs/pjmedia/include",
+				);
+				INFOPLIST_FILE = "TryPJSIP/TryPJSIP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/TryPJSIP/Libs/pjlib/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/pjlib-util/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/pjmedia/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/pjnath/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/pjsip/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/third_party/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9B0784761952B72C0007D7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TryPJSIP/TryPJSIP-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/TryPJSIP/Libs/pjsip/include",
+					"$(SRCROOT)/TryPJSIP/Libs/pjlib/include",
+					"$(SRCROOT)/TryPJSIP/Libs/pjlib-util/include",
+					"$(SRCROOT)/TryPJSIP/Libs/pjnath/include",
+					"$(SRCROOT)/TryPJSIP/Libs/pjmedia/include",
+				);
+				INFOPLIST_FILE = "TryPJSIP/TryPJSIP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/TryPJSIP/Libs/pjlib/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/pjlib-util/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/pjmedia/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/pjnath/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/pjsip/lib",
+					"$(SRCROOT)/TryPJSIP/Libs/third_party/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9B0784781952B72C0007D7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TryPJSIP.app/TryPJSIP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TryPJSIP/TryPJSIP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TryPJSIPTests/TryPJSIPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9B0784791952B72C0007D7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TryPJSIP.app/TryPJSIP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TryPJSIP/TryPJSIP-Prefix.pch";
+				INFOPLIST_FILE = "TryPJSIPTests/TryPJSIPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B0784431952B72C0007D7A9 /* Build configuration list for PBXProject "TryPJSIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0784721952B72C0007D7A9 /* Debug */,
+				9B0784731952B72C0007D7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0784741952B72C0007D7A9 /* Build configuration list for PBXNativeTarget "TryPJSIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0784751952B72C0007D7A9 /* Debug */,
+				9B0784761952B72C0007D7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0784771952B72C0007D7A9 /* Build configuration list for PBXNativeTarget "TryPJSIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0784781952B72C0007D7A9 /* Debug */,
+				9B0784791952B72C0007D7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B0784401952B72C0007D7A9 /* Project object */;
+}
